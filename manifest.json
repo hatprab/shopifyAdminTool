@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Shopify Admin Tool",
+    "version": "0.001",
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches":[
+                "https://*.myshopify.com/admin/orders/*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
